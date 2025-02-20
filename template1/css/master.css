@@ -1,7 +1,7 @@
 /* start variables */
 :root {
     --main-color: #10cab7;
-    --secondary-color: #777;
+    --secondary-color: #2c4755;
     --section-padding: 60px;
     --section-background: #f6f6f6;
 }
@@ -203,7 +203,7 @@ body {
 }
 .features .feat p {
     line-height: 1.8;
-    color: var(--secondary-color);
+    color: #777;
     font-size: 17px;
 }
 /* End Features */
@@ -296,7 +296,7 @@ body {
     margin: 0;
 }
 .portfolio .portfolio-content .card .info p {
-    color: var(--secondary-color);
+    color: #777;
     line-height: 1.6;
     margin-bottom: 0;
 }
@@ -373,8 +373,62 @@ body {
 }
 .about .about-content .text p:last-of-type {
     line-height: 2;
-    color: var(--secondary-color);
+    color: #777;
 }
 
 /* End about */
-
+/* Start Contact */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.contact .info {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--secondary-color);
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+} 
+.contact .info .link {
+    display: block;
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .info .social i {
+    margin-left: 10px;
+    color: var(--secondary-color);
+}
+@media (max-width: 787px) {
+    .contact .info .link,
+    .contact .info .label {
+        font-size: 20px;
+    }
+}
+/* End Contact */
+/* Start Footer  */
+.footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    font-weight: bold;
+    color: var(--main-color)
+}
+/* End Footer  */

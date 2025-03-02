@@ -139,7 +139,7 @@ header .container::after {
 }
 
 header .logo img {
-    height: 40px;
+    height: 30px;
 }
 
 header nav {
@@ -229,7 +229,7 @@ header nav .form i {
 /* Start landing */
 .landing {
     min-height: 100vh;
-    background-image: url(../images/bg.jpeg);
+    background-image: url(../images/slider-1.jpg);
     background-color: #1f2021;
     background-size: cover;
     position: relative;
@@ -264,6 +264,8 @@ header nav .form i {
 @media (max-width: 767px) {
     .landing .text {
         width: 100%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .landing .text .content {
@@ -303,6 +305,9 @@ header nav .form i {
     .landing .change-background {
         display: none;
     }
+    .landing .text .content h2 {
+        font-size: 20px;
+    }
 }
 
 .landing .fa-angle-left {
@@ -316,13 +321,13 @@ header nav .form i {
 .landing .bullets {
     position: absolute;
     left: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     bottom: 30px;
     display: flex;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .landing .bullets li {
@@ -340,6 +345,11 @@ header nav .form i {
 .landing .bullets li.active {
     background-color: var(--main-color);
     border-color: var(--main-color);
+}
+
+.landing .bullets li:not(.active) {
+    background-color: transparent;
+    border-color:#fff;
 }
 
 /* end landing */
@@ -1298,10 +1308,11 @@ header nav .form i {
     -o-transform: translateX(-50%);
 }
 
-.footer .content .social-contact  a {
+.footer .content .social-contact a {
     color: white;
     text-decoration: none;
 }
+
 .footer .content .social-contact i {
     display: inline-block;
     padding: 0 15px;
